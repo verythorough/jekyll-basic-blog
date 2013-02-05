@@ -53,6 +53,15 @@ Now you need to download the starter site. This has all of the things in it that
 
 When you have the starter site up and running you can copy the files to a new directory and create your own site.
 
+If you create new posts, add them to the `_posts` directory. Follow the naming conventions of the two posts in the `_posts` directory. Add the this to the top of any posts you create:
+
+    ---
+    layout: post
+    title: [Put your title here]
+
+    ---
+
+You can look at the two sample posts to check out the way it's done.
 
 
 ---
@@ -82,17 +91,20 @@ Press `control + c` to stop it.
 
 We're using github pages! It's free! You already have a github account! It's not confusing!
 
-Good luck.
+If you want to be able to view the page online make sure you push everything to a branch titled `gh-pages`. Then you will be able to access the site at.
+    
+    http://[your github username].[the name of the github repository].github.com
+
+If you want to use your own domain name (so people don't visit the site at the above address, but instead go to `http://snakes-and-maps.com` or whereves) there is an explanation [here](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+
+__Good luck.__
 
 
 
 
 
 
-
-
-
-[^book]: I choose this book because it was listed on [css-trick's bookshelf](http://css-tricks.com/bookshelf/). Chris Coyier, the man behind [css-tricks](css-tricks.com), is awesome and I highly recommend his site as a resource. I also purchased this book and it's a very comprehensive book that has lots of good information..
+[^book]: I choose this book because it was listed on [css-trick's bookshelf](http://css-tricks.com/bookshelf/). Chris Coyier, the man behind [css-tricks](css-tricks.com), is awesome and I highly recommend his site as a resource. I also purchased this book and it's a very comprehensive book with good information.
 
 [^github-assistance]: If you have trouble installing the github app, check [here](https://help.github.com/articles/set-up-git) for their documentation.
 
