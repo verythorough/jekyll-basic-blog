@@ -1,0 +1,96 @@
+---
+layout: post
+title: I have a friend who asked me for help learning to make web pages
+
+---
+
+<h1 id='this_is_my_explanation'>This is my explanation</h1>
+
+<p>This is about choosing your first web project and getting started with it. We&#8217;re going to make a Jekyll page.</p>
+
+<p>First, grab a book. They&#8217;re useful and give you a reliable reference. The book I recommend<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup> is <a href='http://www.learningwebdesign.com'>Learning Web Design: A Beginner&#8217;s Guide to HTML, CSS, JavaScript, and Web Graphics</a>. If you&#8217;re looking for a book that is more likely to be in libraries check out <a href='http://www.learningwebdesign.com'>Designing With Web Standards 3rd Edition</a>. This book is great, and helped bring about a bunch of great changes in the internet over the past decade. However, the third edition came out in 2009, and the web changes fast. Some of the information is outdated.</p>
+
+<p>Since you have a book you can read about what the internet is, what HTML and CSS and Javascript are, and look up more terms and such. If you have a question about something, check the book first (its answers will be better) and if you can&#8217;t find it there, Google it. Building web pages is mostly about looking things up on Google.</p>
+
+<ul>
+<li>This is written for Apple users. I talk about programs and ruby for Mac users (on OSX Lion or later). Srys.</li>
+</ul>
+<hr />
+<h3 id='installing_things'>Installing things</h3>
+
+<p>HTML and CSS, the most basic parts of a modern web page, are just text files. You can open them with TextEdit, the text editing program that comes with OSX. But if you&#8217;re planning on actually making web pages, using a text editor designed for writing code is very useful.</p>
+
+<p>I recommend <a href='http://www.sublimetext.com/'>Sublime Text</a>. It&#8217;s what I use to write code every day. It&#8217;s free to download, but it will nag you about purchasing it every so often. I suggest using the free trial of it until you can&#8217;t stand the nag screen anymore.</p>
+
+<p>You also will need to install Command Line Tools for OSX, which you can download <a href='https://developer.apple.com/downloads/index.action'>here</a>. They are free.</p>
+
+<p>You will need a Github account. Go to <a href='https://github.com/'>Github</a> and create an account.</p>
+
+<p>Then set up Git. The easiest way to set it up is to download and install the Github application, available <a href='https://central.github.com/mac/latest'>here</a> <sup id='fnref:2'><a href='#fn:2' rel='footnote'>2</a></sup>. This application will only work on MacOSX Lion or Mountain Lion. If you don&#8217;t have Lion or Mountain Lion I would recommend upgrading. It will make things easier.</p>
+
+<p>While it would be really cool if everything could be done via a graphical interface, to get this site running we are going to have to use the terminal. <sup id='fnref:3'><a href='#fn:3' rel='footnote'>3</a></sup></p>
+
+<p>After you have installed the Github application, open up a terminal window. To do this, open Spotlight, the Mac OSX search utility in the upper right hand corner of the screen (Command + Spacebar is the standard keyboard shortcut) and type &#8216;Terminal&#8217; into the search field.</p>
+
+<p>This will bring up a terminal window. You should have a cursor in a blank screen.</p>
+
+<p>Type <code>sudo gem update --system</code> to update your ruby gems. You will be prompted for a password. Enter your password.</p>
+
+<p>Then do <code>gem install jekyll</code><sup id='fnref:4'><a href='#fn:4' rel='footnote'>4</a></sup></p>
+
+<p>Whew! You&#8217;ve now got everything installed to create the rockingest website evuh!</p>
+<hr />
+<h3 id='starter_site'>Starter Site</h3>
+
+<p>Now you need to download the starter site. This has all of the things in it that a website needs, and offers a chance to mess around, learn things and get a feel for web sites. It&#8217;s tough to create a site without some basis, and this site will provide the base for you to work from.</p>
+
+<p>When you have the starter site up and running you can copy the files to a new directory and create your own site.</p>
+
+<p>If you create new posts, add them to the <code>_posts</code> directory. Follow the naming conventions of the two posts in the <code>_posts</code> directory. Add the this to the top of any posts you create:</p>
+
+<pre><code>---
+layout: post
+title: [yer title here]
+
+---</code></pre>
+
+<p>You can look at the two sample posts to check out the way it&#8217;s done.</p>
+<hr />
+<h3 id='running_the_site_locally'>Running the site &#8220;locally&#8221;</h3>
+
+<p>It&#8217;s a good practice to set up any webpage you are working on on your own computer (aka locally), so you can work on pieces of it without worrying about whether you are breaking them momentarily. With Jekyll, the site generator the starter site is made with, this is incredibly easy. It might seem daunting, but compared with some of the other options&#8230; this is a pleasant cakewalk.</p>
+
+<p>Open up the terminal again, using Spotlight or whatever you find easiest.</p>
+
+<p>Type <code>cd</code></p>
+
+<p>Then drag in the folder where the sample site is.</p>
+
+<p>Press <code>enter</code>.</p>
+
+<p>Type <code>jekyll --server</code> and hit enter again.</p>
+
+<p>It&#8217;s up and running!</p>
+
+<p>Press <code>control + c</code> to stop it.</p>
+<hr />
+<h3 id='deploying_the_site_publishing_the_site_to_the_interwebs'>Deploying the site (Publishing the site to the interwebs)</h3>
+
+<p>We&#8217;re using github pages! It&#8217;s free! You already have a github account! It&#8217;s not confusing!</p>
+
+<p>If you want to be able to view the page online make sure you push everything to a branch titled <code>gh-pages</code>. Then you will be able to access the site at.</p>
+
+<pre><code>http://[your github username].[the name of the github repository].github.com</code></pre>
+
+<p>If you want to use your own domain name (so people don&#8217;t visit the site at the above address, but instead go to <code>http://snakes-and-maps.com</code> or whereves) there is an explanation <a href='https://help.github.com/articles/setting-up-a-custom-domain-with-pages'>here</a>.</p>
+
+<p><strong>Good luck.</strong></p>
+<div class='footnotes'><hr /><ol><li id='fn:1'>
+<p>I choose this book because it was listed on <a href='http://css-tricks.com/bookshelf/'>css-trick&#8217;s bookshelf</a>. Chris Coyier, the man behind <a href='css-tricks.com'>css-tricks</a>, is awesome and I highly recommend his site as a resource. I also purchased this book and it&#8217;s a very comprehensive book with good information.</p>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li><li id='fn:2'>
+<p>If you have trouble installing the github app, check <a href='https://help.github.com/articles/set-up-git'>here</a> for their documentation.</p>
+<a href='#fnref:2' rev='footnote'>&#8617;</a></li><li id='fn:3'>
+<p>I will explain how to do everything you need to do as clearly as possible, so you probably don&#8217;t need to know more about the terminal. But if you run into issues, or are curious about the terminal&#8212;what it means, what it does, and how to use it&#8212;I&#8217;d recommend this <a href='http://mac.tutsplus.com/tutorials/terminal/navigating-the-terminal-a-gentle-introduction/'>article</a>.</p>
+<a href='#fnref:3' rev='footnote'>&#8617;</a></li><li id='fn:4'>
+<p>If you have some trouble with these things, feel free to read more about how it works <a href='https://github.com/mojombo/jekyll/wiki/install'>here</a></p>
+<a href='#fnref:4' rev='footnote'>&#8617;</a></li>

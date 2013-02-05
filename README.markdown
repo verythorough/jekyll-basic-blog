@@ -1,6 +1,6 @@
 # Hello
 
-I have a friend who asked me for help learning how to make web pages. If you are curious about the explanation that precedes the use of this repository, check out [the original post](sethherr.me/teaching-the-web/).
+I have a friend who asked me for help learning how to make web pages. If you are curious about the explanation that precedes the use of this repository, check out [the original post](http://sethherr.github.com/jekyll-starter/teaching-the-web.html).
 
 ### This is a basic Jekyll Site.
 
