@@ -2,13 +2,16 @@
 <head>
   <html lang="en">
   <meta charset="utf-8" />
-  <!-- Still need to make a bb Logo -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} – {{ site.description }}
+    {% else %}
+      {{ page.title }} – {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="/style.css" type="text/css">
   <meta name="viewport" content="width=device-width" />
-  <!-- Pulled from http://code.google.com/p/html5shiv/ -->
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 </head>

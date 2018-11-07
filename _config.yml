@@ -1,9 +1,7 @@
 # Site settings
-title: Jekyll Starter
+title: Jekyll Basic Blog
 description: > 
-  Learn to code!
-baseurl: "/jekyll-starter"
-github_username:  sethherr
+  A very simple Jekyll site for learning how Jekyll sites work.
 
 # Build settings
 markdown: kramdown
